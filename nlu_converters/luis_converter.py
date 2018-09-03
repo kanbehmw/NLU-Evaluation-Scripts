@@ -40,7 +40,7 @@ class LuisConverter(Converter):
 				if words[i] and words[i] != " ":
 					pointer += 1
 			#print start_index, end_index
-			entities.append({"entity": e["entity"], "startPos": start_index, "endPos": end_index-1})
+			entities.append({"entity": e["entity"], "startPos": start_index, "endPos": end_index})
 		self.utterances.append({"text": sentence.text, "intent": sentence.intent, "entities": entities})
 	
 	
