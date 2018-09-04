@@ -72,7 +72,8 @@ class LuisAnalyser(Analyser):
   					truePos = False
   					
   					for y in oEntities:
-  						if LuisAnalyser.detokenizer(x["entity"]) == y["text"].lower():
+  						if LuisAnalyser.detokenizer(x["entity"]) == y["text"]:
+							print("x entity:", x["entity"], "y entity:", y["text"])
   							if x["type"] == y["entity"]: #truePos
   								truePos = True
   								oEntities.remove(y)
