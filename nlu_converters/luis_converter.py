@@ -23,7 +23,7 @@ class LuisConverter(Converter):
 		entities = []
 		for e in sentence.entities:
 		#Calculate the position based on character count.
-			words = re.split(r"(\s|[/!?.'\"()])", sentence.text)
+			words = re.split(r"(\s|[-/!?.'\"()])", sentence.text)
 			index = 0
 			pointer = 0
 			#print sentence.text
