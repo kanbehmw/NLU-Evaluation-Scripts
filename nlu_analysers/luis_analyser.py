@@ -18,7 +18,7 @@ class LuisAnalyser(Analyser):
 		
 		for s in data["sentences"]:
 			if not s["training"]: #only use test data
-				encoded_text = urllib.quote(s['text'])
+				encoded_text = urllib.quote(s['text'].encode('utf-8'))
 				annotations['results'].append(requests.get(self.url % (encoded_text, self.project),data={},headers={}).json())
 		
 		file = open(output, "w")
@@ -72,8 +72,9 @@ class LuisAnalyser(Analyser):
   					truePos = False
   					
   					for y in oEntities:
+  						Analyser.check_key(analysis["entities"], y["entity"])
   						if LuisAnalyser.detokenizer(x["entity"]) == y["text"]:
-							print("x entity:", x["entity"], "y entity:", y["text"])
+							#print("x entity:", x["entity"], "y entity:", y["text"])
   							if x["type"] == y["entity"]: #truePos
   								truePos = True
   								oEntities.remove(y)
