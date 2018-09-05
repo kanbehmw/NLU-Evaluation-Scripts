@@ -1,0 +1,406 @@
+{
+    "bing_entities": [], 
+    "closedLists": [], 
+    "composites": [], 
+    "culture": "en-us", 
+    "desc": "Visit https://github.com/sebischair/NLU-Evaluation-Corpora for more information", 
+    "entities": [
+        {
+            "name": "OperatingSystem"
+        }, 
+        {
+            "name": "WebService"
+        }, 
+        {
+            "name": "Browser"
+        }
+    ], 
+    "intents": [
+        {
+            "name": "None"
+        }, 
+        {
+            "name": "Change Password"
+        }, 
+        {
+            "name": "Filter Spam"
+        }, 
+        {
+            "name": "Sync Accounts"
+        }, 
+        {
+            "name": "Export Data"
+        }, 
+        {
+            "name": "Delete Account"
+        }, 
+        {
+            "name": "Download Video"
+        }, 
+        {
+            "name": "Find Alternative"
+        }
+    ], 
+    "luis_schema_version": "2.2.0", 
+    "model_features": [], 
+    "name": "WebApplicationsCorpus", 
+    "regex_entities": [], 
+    "regex_features": [], 
+    "utterances": [
+        {
+            "entities": [
+                {
+                    "endPos": 26, 
+                    "entity": "WebService", 
+                    "startPos": 20
+                }
+            ], 
+            "intent": "Download Video", 
+            "text": "How do I download a YouTube video?"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 39, 
+                    "entity": "WebService", 
+                    "startPos": 31
+                }
+            ], 
+            "intent": "Change Password", 
+            "text": "How do I change my password on TV Tropes?"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 50, 
+                    "entity": "WebService", 
+                    "startPos": 46
+                }
+            ], 
+            "intent": "Change Password", 
+            "text": "Why can't I change my password and login with Skype?"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 31, 
+                    "entity": "WebService", 
+                    "startPos": 27
+                }
+            ], 
+            "intent": "None", 
+            "text": "Change subject line in new Gmail compose window"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 11, 
+                    "entity": "WebService", 
+                    "startPos": 6
+                }
+            ], 
+            "intent": "None", 
+            "text": "Email Google Form daily?"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 48, 
+                    "entity": "WebService", 
+                    "startPos": 42
+                }
+            ], 
+            "intent": "Export Data", 
+            "text": "How can I export track.scrobble data from last.fm?"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 32, 
+                    "entity": "WebService", 
+                    "startPos": 20
+                }
+            ], 
+            "intent": "Export Data", 
+            "text": "How can I backup my wordpress.com hosted blog?"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 32, 
+                    "entity": "WebService", 
+                    "startPos": 18
+                }, 
+                {
+                    "endPos": 53, 
+                    "entity": "WebService", 
+                    "startPos": 39
+                }
+            ], 
+            "intent": "Sync Accounts", 
+            "text": "How can I sync my Yahoo! Calendar with Google Calendar?"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 5, 
+                    "entity": "WebService", 
+                    "startPos": 0
+                }, 
+                {
+                    "endPos": 26, 
+                    "entity": "Browser", 
+                    "startPos": 21
+                }
+            ], 
+            "intent": "Sync Accounts", 
+            "text": "Google Bookmarks and Chrome Bookmark Sync -- Different?"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 25, 
+                    "entity": "WebService", 
+                    "startPos": 17
+                }, 
+                {
+                    "endPos": 63, 
+                    "entity": "WebService", 
+                    "startPos": 49
+                }
+            ], 
+            "intent": "Sync Accounts", 
+            "text": "How do I sync my RunKeeper workout schedule with Google Calender?"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 15, 
+                    "entity": "WebService", 
+                    "startPos": 11
+                }
+            ], 
+            "intent": "Filter Spam", 
+            "text": "Does using Gmail's \"Never send it to Spam\" filter mean I can't train their spam filter?"
+        }, 
+        {
+            "entities": [], 
+            "intent": "Filter Spam", 
+            "text": "Correctly Identifying Spam Messages"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 6, 
+                    "entity": "WebService", 
+                    "startPos": 0
+                }, 
+                {
+                    "endPos": 18, 
+                    "entity": "WebService", 
+                    "startPos": 12
+                }
+            ], 
+            "intent": "Filter Spam", 
+            "text": "Twitter and Echofon spam"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 29, 
+                    "entity": "WebService", 
+                    "startPos": 25
+                }
+            ], 
+            "intent": "Filter Spam", 
+            "text": "Totally Blocking Spam To Gmail Account"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 35, 
+                    "entity": "WebService", 
+                    "startPos": 31
+                }
+            ], 
+            "intent": "Filter Spam", 
+            "text": "Discarding spam mail faster in Gmail"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 28, 
+                    "entity": "WebService", 
+                    "startPos": 24
+                }
+            ], 
+            "intent": "Filter Spam", 
+            "text": "Stopping spam emails in Gmail by pattern"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 29, 
+                    "entity": "WebService", 
+                    "startPos": 17
+                }, 
+                {
+                    "endPos": 43, 
+                    "entity": "OperatingSystem", 
+                    "startPos": 37
+                }
+            ], 
+            "intent": "Find Alternative", 
+            "text": "Alternatives for Google Reader (with Android synchronizing)"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 7, 
+                    "entity": "WebService", 
+                    "startPos": 0
+                }
+            ], 
+            "intent": "Find Alternative", 
+            "text": "Bugmenot (registration bypasser) alternative that doesn't suck?"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 22, 
+                    "entity": "WebService", 
+                    "startPos": 16
+                }
+            ], 
+            "intent": "Find Alternative", 
+            "text": "Alternatives to Twitter"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 5, 
+                    "entity": "WebService", 
+                    "startPos": 0
+                }
+            ], 
+            "intent": "Find Alternative", 
+            "text": "Google search engine alternatives"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 28, 
+                    "entity": "WebService", 
+                    "startPos": 16
+                }
+            ], 
+            "intent": "Find Alternative", 
+            "text": "Alternatives to Google Groups with more features?"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 22, 
+                    "entity": "WebService", 
+                    "startPos": 19
+                }, 
+                {
+                    "endPos": 33, 
+                    "entity": "WebService", 
+                    "startPos": 27
+                }
+            ], 
+            "intent": "Find Alternative", 
+            "text": "Are there any good Veoh or Youtube alternatives?"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 3, 
+                    "entity": "WebService", 
+                    "startPos": 0
+                }
+            ], 
+            "intent": "Find Alternative", 
+            "text": "Mint alternatives for Canada"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 26, 
+                    "entity": "WebService", 
+                    "startPos": 20
+                }
+            ], 
+            "intent": "Delete Account", 
+            "text": "How can I delete my Twitter account?"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 26, 
+                    "entity": "WebService", 
+                    "startPos": 19
+                }
+            ], 
+            "intent": "Delete Account", 
+            "text": "How do I delete my LinkedIn account?"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 23, 
+                    "entity": "WebService", 
+                    "startPos": 19
+                }
+            ], 
+            "intent": "Delete Account", 
+            "text": "How do I delete my Gmail account?"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 34, 
+                    "entity": "WebService", 
+                    "startPos": 19
+                }
+            ], 
+            "intent": "Delete Account", 
+            "text": "How do I delete my Experts Exchange account?"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 23, 
+                    "entity": "WebService", 
+                    "startPos": 19
+                }
+            ], 
+            "intent": "Delete Account", 
+            "text": "How do I delete my Ohloh profile?"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 38, 
+                    "entity": "WebService", 
+                    "startPos": 32
+                }
+            ], 
+            "intent": "Delete Account", 
+            "text": "How can I permanently delete my MySpace account?"
+        }, 
+        {
+            "entities": [
+                {
+                    "endPos": 30, 
+                    "entity": "WebService", 
+                    "startPos": 24
+                }
+            ], 
+            "intent": "Delete Account", 
+            "text": "How to disable/delete a Harvest account?"
+        }
+    ], 
+    "versionId": "0.1.0"
+}
