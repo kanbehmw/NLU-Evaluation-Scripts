@@ -38,13 +38,13 @@ class LuisAnalyser(Analyser):
   		
   		i = 0
   		for a in annotations["results"]:
-  			if not a["query"] == gold_standard[i]["text"]:
-  				print a["query"]
+  			if not a["text"] == gold_standard[i]["text"]:
+  				print a["text"]
   				print gold_standard[i]["text"]
   				print "WARNING! Texts not equal"
   			 
   			#intent  			 			
-  			aIntent = a["topScoringIntent"]["intent"]
+  			aIntent = a["intent"]["name"]
   			oIntent = gold_standard[i]["intent"]
   			
   			Analyser.check_key(analysis["intents"], aIntent)
@@ -64,30 +64,29 @@ class LuisAnalyser(Analyser):
   			oEntities = gold_standard[i]["entities"]
   			  			  			
   			for x in aEntities:
-  				Analyser.check_key(analysis["entities"], x["type"])
+  				Analyser.check_key(analysis["entities"], x["entity"])
   				
   				if len(oEntities) < 1: #false pos
-  					analysis["entities"][x["type"]]["falsePos"] += 1	
+  					analysis["entities"][x["entity"]]["falsePos"] += 1	
   				else:
   					truePos = False
   					
   					for y in oEntities:
   						Analyser.check_key(analysis["entities"], y["entity"])
-  						if LuisAnalyser.detokenizer(x["entity"]) == y["text"]:
-							#print("x entity:", x["entity"], "y entity:", y["text"])
-  							if x["type"] == y["entity"]: #truePos
+  						if LuisAnalyser.detokenizer(x["value"]) == y["text"]:
+  							if x["entity"] == y["entity"]: #truePos
   								truePos = True
   								oEntities.remove(y)
   								break
   							else:						 #falsePos + falseNeg
-  								analysis["entities"][x["type"]]["falsePos"] += 1
+  								analysis["entities"][x["entity"]]["falsePos"] += 1
   								analysis["entities"][y["entity"]]["falseNeg"] += 1
   								oEntities.remove(y)
   								break
   					if truePos:
-  						analysis["entities"][x["type"]]["truePos"] += 1
+  						analysis["entities"][x["entity"]]["truePos"] += 1
   					else:
-  						analysis["entities"][x["type"]]["falsePos"] += 1	
+  						analysis["entities"][x["entity"]]["falsePos"] += 1	
   				
   				
   			for y in oEntities:
